@@ -11,24 +11,24 @@ public class basics_java_day1 {
         Scanner in = new Scanner(System.in);
 
         //Main Function for First Program.
-//        System.out.print("Enter a Year: ");
-//        int year = in.nextInt();
-//        String result = leapYear(year);
-//        System.out.println(result);
+        System.out.print("Enter a Year: ");
+        int year = in.nextInt();
+        String result = leapYear(year);
+        System.out.println(result);
 
         //Main Function for Second Program.
-//        System.out.print("Enter first number:");
-//        double n1= in.nextDouble();
-//        System.out.print("Enter second number:");
-//        double n2=in.nextDouble();
-//        double res = twoSum(n1,n2);
-//        System.out.print("The sum is : "+res);
+        System.out.print("Enter first number:");
+        double n1= in.nextDouble();
+        System.out.print("Enter second number:");
+        double n2=in.nextDouble();
+        double res = twoSum(n1,n2);
+        System.out.print("The sum is : "+res);
 
         //Main Function for Third Program.
-//        System.out.print("Enter the number(Multiplication Table): ");
-//        int multiplicationVar = in.nextInt();
-//
-//        multiplicationTable(multiplicationVar);
+        System.out.print("Enter the number(Multiplication Table): ");
+        int multiplicationVar = in.nextInt();
+
+        multiplicationTable(multiplicationVar);
 
         //Main Function for Fifth Program.
         double sum =0;
