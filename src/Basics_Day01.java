@@ -6,7 +6,7 @@
 5.Keep taking numbers as inputs till the user enters ‘x’, after that print sum of all.
  */
 import java.util.Scanner;
-public class basics_java_day1 {
+public class Basics_Day01 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
