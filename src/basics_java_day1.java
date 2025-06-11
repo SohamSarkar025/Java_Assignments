@@ -25,9 +25,10 @@ public class basics_java_day1 {
         System.out.print("The sum is : "+res);
 
         //Main Function for Third Program.
+
+        System.out.println(" ");
         System.out.print("Enter the number(Multiplication Table): ");
         int multiplicationVar = in.nextInt();
-
         multiplicationTable(multiplicationVar);
 
         //Main Function for Fifth Program.
@@ -43,6 +44,18 @@ public class basics_java_day1 {
             sum += number;
         }
         System.out.println("The sum of inputed Number is :"+sum);
+
+        System.out.println("Find HCF & LCM");
+        System.out.print("Enter first number: ");
+        int num1 = in.nextInt();
+        System.out.println(" ");
+        System.out.print("Enter second number: ");
+        int num2= in.nextInt();
+        int hcfRes = findHcf(num1,num2);
+        System.out.print("The HCF is :"+hcfRes);
+        int lcmRes = findLcm(num1,num2);
+        System.out.println(" ");
+        System.out.print("The LCM is :"+lcmRes);
     }
 
 //    1900 → divisible by 100 but not 400 → ❌ Not a Leap Year
@@ -62,5 +75,17 @@ public class basics_java_day1 {
         for(int i=1;i<=10;i++){
             System.out.print(num*i+" , ");
         }
+    }
+    public static int findHcf(int a,int b){
+        while(b!=0){
+            int temp = b;
+            b= a%b;
+            a=temp;
+        }
+        return a;
+    }
+    public static int findLcm(int a,int b){
+        int hcf = findHcf(a,b);
+        return (a*b)/hcf;
     }
 }
